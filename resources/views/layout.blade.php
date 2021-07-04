@@ -33,10 +33,11 @@
                 @if(Session()->has('LoggedUser'))
                     <li class="nav-item"><a class="nav-link" href="{{ route('auth.logout')}}">Logout</a></li>
                     <li class="nav-item"><a class="nav-link" href="profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart">Cart</a></li>
                 @else
                     <li class="nav-item"><a class="nav-link" href="auth/signin">Sign up</a></li>
                 @endif
-                <li class="nav-item"><a class="nav-link" href="cart">Cart</a></li>
+                
             </ul>
         </div>
     </nav>
