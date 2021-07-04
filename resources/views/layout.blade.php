@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
+    <link rel="stylesheet" href="/css/style.css">
     <title>@yield('title')</title>
-    <link rel="icon" href="{{asset('/img/logo.png')}}" type="image/x-icon">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
     
 </head>
 <body>
     
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="\"><img src="{{asset('/img/logo.png')}}" class="img-responsive" height="30px" width="40px"></a>
+        <a class="navbar-brand" href="\"><img src="/img/logo.png" class="img-responsive" height="30px" width="40px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
