@@ -1,0 +1,207 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+body{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    /* background-image: linear-gradient(to right, rgb(34, 34, 34),rgb(35, 109, 16)); */
+}
+/* to make navbar stick to top of page */
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.nav-link:hover{
+    background: #333;
+    color: white;
+}
+.search{
+    margin: 4% 0%;
+    display: flex;
+    justify-content: center;
+}
+.search input[type='text']{
+    max-width: 50%;
+}
+/* #search_suggest{
+    background: white;
+    color: #1d1c1c;
+} */
+.btn{
+    color: white;
+}
+.content{
+    padding: 1%;
+    /* background-color: #474646; */
+    /* background-image: linear-gradient(rgb(34, 34, 34),rgb(125, 128, 124)); */
+    background-image: linear-gradient(rgb(34, 34, 34),rgb(84, 85, 84));
+
+}
+.main{
+    background-color: #a7a3a3;
+    /* background-image: linear-gradient(rgb(34, 34, 34),rgb(125, 128, 124)); */
+    background-image: linear-gradient(rgb(51, 51, 51),rgb(84, 85, 84));
+    /* background-image: linear-gradient(rgb(51, 51, 51),rgb(119, 24, 24)); */
+
+    padding: 5%;
+    /* margin: 0% 1%; */
+}
+.pad{
+    padding: 4%;
+}
+.review{
+    border: 2px solid black;
+    border-radius: 1%;
+}
+.round{
+    border-radius: 50%;
+}
+hr{
+    border: 1px solid #333;
+}
+.img{
+    background-color: #999991;
+    color: #eeebeb;
+    border: #333 1px solid;
+    /* margin: 1%; */
+    padding: 1%;
+}
+.img:hover{
+    transform: scale(1.25);
+    transition: 250ms;
+    z-index: 1;
+}
+/* centering categories using flexbox */
+.img{
+    display: flex;
+    /* align-content: center; */
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+figcaption{
+    font-weight:bold;
+    text-align: center;
+}
+
+input[type='number']{
+    max-width: 50%;
+}
+footer{
+    background-color: #1d1c1c;
+    color: white;
+}
+footer a{
+    color: #d46c6c;   
+}
+footer a:hover{
+    color: #864646;   
+}
+
+/* Utility Classes */
+.cat{
+    cursor: pointer;
+}
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+.md-responsive{
+    max-width: 80%;
+    height: auto;
+}
+.sm-responsive{
+    max-width: 60%;
+    height: auto;
+}
+.xs-responsive{
+    max-width: 20%;
+    height: auto;
+}
+.cs-responsive{
+    max-width: 20%;
+    height: 30%;
+}
+.bg{
+    color: white;
+    padding: 3%;
+    /* background-image: linear-gradient(rgb(34, 34, 34),rgb(125, 128, 124)); */
+    background-image: linear-gradient(rgb(34, 34, 34),rgb(84, 85, 84));
+
+}
+.bg p{
+    line-height: 3em;
+    font-size:larger;
+}
+.white{
+    background-color: #ddd;
+    color: #1d1c1c;
+}
+.end{
+    align-items: end;
+}
+.clr{
+    clear: both;
+}
+/* Css for Star rating */
+.checked {
+    color: #FFED85;
+  }
+
+.rating { 
+    border: none;
+    float: left;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+  
+/* .img-wrap {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .img-wrap > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  } */
