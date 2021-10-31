@@ -1,1 +1,1 @@
-Website Project Hosted at: https://techconsolidated.herokuapp.com/
+Laravel Project for an Ecommerce app selling dummy products
